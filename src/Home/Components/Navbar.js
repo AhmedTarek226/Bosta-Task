@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const [trackingNo, setTrackingNo] = useState("");
+  const navigate = useNavigate();
+
+  function search() {
+    if (trackingNo === "") {
+      alert("Please enter tracking number");
+    } else {
+      navigate(`/tracking?trackingNo=${trackingNo}`);
+    }
+  }
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to={"/"}>
-          <img
+          Home
+          {/* <img
             src="assets/images/bosta_logo.png"
             alt="logo"
             width={"150px"}
             className="me-3"
-          />
+          /> */}
         </Link>
         <button
           className="navbar-toggler"
@@ -81,18 +93,19 @@ function Navbar() {
               >
                 <li className="search-form">
                   <label className="fs-6 mb-3">Track your shipment</label>
-                  <div class="input-group mb-2">
+                  <div class="input-group input-group-sm mb-2">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Tracking No."
-                      aria-label="Recipient's username"
-                      aria-describedby="button-addon2"
+                      value={trackingNo}
+                      onChange={(e) => setTrackingNo(e.target.value)}
                     />
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-danger"
                       type="button"
                       id="button-addon2"
+                      onClick={search}
                     >
                       Search
                     </button>
