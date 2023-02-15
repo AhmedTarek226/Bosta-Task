@@ -1,0 +1,74 @@
+main{
+    width: 85%;
+    direction: rtl;
+    margin: 0px auto;
+    margin-top: 150px;
+}
+
+.order-container{
+    /* border-radius: 10px; */
+    width: 100%;
+     /* border: 1px solid rgb(211, 211, 211); */
+   /* border-top: 5px solid rgb(160, 160, 160);
+    border-bottom: 5px solid rgb(160, 160, 160); */
+}
+.order-container .order-info{
+    border-bottom: 1px solid rgb(175, 174, 174);
+    margin-bottom: 1rem;
+}
+.order-container .order-info .order-container-title{
+    font-size: 1.04rem;
+    color: rgb(175, 174, 174);
+    font-weight: 500;
+}
+
+.order-container .order-info .order-container-detail{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.order-container .order-stepper-details{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: black;
+    
+}
+
+.progress-bar{
+    width: 75%;
+    background-color: rgb(223, 12, 12);
+}
+
+.order-table{
+    border-radius: 4px;
+    /* padding-top: 9px; */
+    border: 0.6px solid rgb(226, 226, 226);
+    /* border-top: 5px solid rgb(160, 160, 160);
+    border-bottom: 5px solid rgb(160, 160, 160); */
+}
+
+table thead{
+    border-bottom: 3px solid rgba(236, 233, 233, 0);
+}
+
+table thead tr{
+    color: rgb(153, 151, 151);
+}
+table tbody tr{
+    color: rgb(105, 104, 104);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+.order-report .btn{
+    background-color: rgb(223, 12, 12);
+    color: white;
+}
+
+.order-report .btn:hover{
+    background-color: rgba(240, 15, 15, 0.801);
+    border: 2px solid white;
+    /* color: white; */
+}

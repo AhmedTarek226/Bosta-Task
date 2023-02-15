@@ -15,16 +15,15 @@ function Navbar() {
     }
   }
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white px-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to={"/"}>
-          Home
-          {/* <img
+          <img
             src="assets/images/bosta_logo.png"
             alt="logo"
             width={"150px"}
             className="me-3"
-          /> */}
+          />{" "}
         </Link>
         <button
           className="navbar-toggler"
@@ -102,7 +101,7 @@ function Navbar() {
                       onChange={(e) => setTrackingNo(e.target.value)}
                     />
                     <button
-                      className="btn btn-outline-danger"
+                      className="btn"
                       type="button"
                       id="button-addon2"
                       onClick={search}

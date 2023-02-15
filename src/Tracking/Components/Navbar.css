@@ -1,0 +1,33 @@
+.navbar{
+  box-shadow: 3px 3px 20px rgba(231, 229, 229, 0.699);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a:hover {
+  color: rgb(223, 12, 12);
+  text-decoration: none;
+}
+
+.search-form{
+    width: 250px;
+    padding: 5px 10px;
+}
+
+.btn{
+  border:1px solid rgb(223, 12, 12);
+  color: rgb(223, 12, 12);
+}
+
+.btn:hover{
+  /* border:1px solid rgb(194, 11, 11); */
+  color: white;
+  background-color: rgb(223, 12, 12);
+}
